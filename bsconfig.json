@@ -1,0 +1,40 @@
+{
+  "name": "jest-tdd",
+  "reason": {
+    "react-jsx": 3
+  },
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    },
+    {
+      "dir": "__tests__",
+      "type": "dev",
+      "subdirs": true
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "es6",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "namespace": true,
+  "bsc-flags": ["-open Belt"],
+  "bs-dependencies": [
+    "@rescript/react",
+    "rescript-webapi",
+    "@ryyppy/rescript-promise"
+  ],
+  "bs-dev-dependencies": [
+    "@greenlabs/rescript-jest",
+    "@greenlabs/rescript-nock",
+    "@greenlabs/rescript-testing-library"
+  ],
+  "warnings": {
+    "error": true,
+    "number": "-48"
+  }
+}
